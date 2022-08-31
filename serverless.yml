@@ -1,4 +1,3 @@
-org: erickworkspace
 app: hello-sls-framework
 service: image-analysis
 frameworkVersion: '3'

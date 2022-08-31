@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1661900133049" clover="3.2.0">
-  <project timestamp="1661900133049" name="All files">
+<coverage generated="1661907393359" clover="3.2.0">
+  <project timestamp="1661907393359" name="All files">
     <metrics statements="126" coveredstatements="126" conditionals="13" coveredconditionals="13" methods="6" coveredmethods="6" elements="145" coveredelements="145" complexity="0" loc="126" ncloc="126" packages="1" files="3" classes="3"/>
     <file name="factory.js" path="/home/luanlima/Downloads/demo04-image-analysis/demo04-image-analysis/image-analysis/src/factory.js">
       <metrics statements="13" coveredstatements="13" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
