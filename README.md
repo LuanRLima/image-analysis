@@ -13,7 +13,7 @@ authorName: 'Luan Rodrigues Lima.'
 
 Esta projeto demonstra como fazer uma API HTTP com Node.js em execução no AWS Lambda API Gateway, Rekognition e Translate usando o Serverless Framework para identificar as imagens e traduzir sua reposta usamos o jest para fazer os teste de integração.
 
-## Usage
+## Uso
 E necessario a instalacao do aws cli :
 https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
@@ -35,7 +35,7 @@ $ npm install -g ntl
 $ sls deploy
 ```
 
-After deploying, you should see output similar to:
+Após a implantação, você deverá ver uma saída semelhante a:
 
 ```bash
 Deploying image-analysis to stage dev (us-east-1)
@@ -47,9 +47,9 @@ functions:
   img-analysis: image-analysis-dev-img-analysis (13 MB)
 ```
 
-_Note_: In current form, after deployment, your API is public and can be invoked by anyone. For production deployments, you might want to configure an authorizer. For details on how to do that, refer to [http event docs](https://www.serverless.com/framework/docs/providers/aws/events/apigateway/).
+_Note_: Na forma atual, após a implantação, sua API é pública e pode ser invocada por qualquer pessoa. Para implantações de produção, convém configurar um autorizador. Para obter detalhes sobre como fazer isso, consulte [http event docs](https://www.serverless.com/framework/docs/providers/aws/events/apigateway/).
 
-### Invocation
+### Invocação
 
 Após a implantação bem-sucedida, você pode chamar o aplicativo criado via HTTP:
 
@@ -90,7 +90,7 @@ Voce pode invocar a funcao local usando o comando a abaixo e passando o path do 
 $ sls invoke local -f img-analysis --path caminho/arquivo.json
 ```
 
-Which should result in response similar to the following:
+O que deve resultar em uma resposta semelhante à seguinte:
 
 ```
 event {
