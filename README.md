@@ -20,16 +20,16 @@ O guia para configurar o aws cli https://docs.aws.amazon.com/pt_br/cli/latest/us
 
 Para instalar todas as dependências dentro da /demo04-image-analysis/image-analysis execute o comando  a baixo para baixar as dependências do projeto
 ```
-$ npm install
+npm install
 ```
 (Opcional) Instalar o ntl, ele vai lhe ajudar a rodar os scripts do package.json:
 ```
-$ npm install -g ntl
+npm install -g ntl
 ```
 ### Deployment
 
 ```
-$ sls deploy
+sls deploy
 ```
 
 Após a implantação, você deverá ver uma saída semelhante a:
@@ -51,7 +51,7 @@ _Note_: Na forma atual, após a implantação, sua API é pública e pode ser in
 Após a implantação bem-sucedida, você pode chamar o aplicativo criado via HTTP:
 
 ```bash
-$ curl https://8t217foo4m.execute-api.us-east-1.amazonaws.com/analyse?imageUrl={link_da_imagem}
+curl https://8t217foo4m.execute-api.us-east-1.amazonaws.com/analyse?imageUrl={link_da_imagem}
 ```
 
 O que deve resultar em uma resposta semelhante à seguinte
@@ -68,20 +68,20 @@ O que deve resultar em uma resposta semelhante à seguinte
 ```
 Você pode invocar a função em prod usando o comando a baixo para executar local com mock o do test:
 ```
-$ npm run invoke
+npm run invoke
 ```
 Você pode invocar a função em prod usando o comando a abaixo e passando o path do arquivo json de sua preferência:
 ```
-$ ls invoke -f img-analysis --path caminho/arquivo.json
+ls invoke -f img-analysis --path caminho/arquivo.json
 ```
 Local development
 Você pode invocar a função local usando o comando a abaixo para executar local com mock o do test:
 ```
-$ npm run invoke:local
+npm run invoke:local
 ```
 Você pode invocar a função local usando o comando a abaixo e passando o path do arquivo json de sua preferência
 ```
-$ sls invoke local -f img-analysis --path caminho/arquivo.json
+sls invoke local -f img-analysis --path caminho/arquivo.json
 ```
 O que deve resultar em uma resposta semelhante à seguinte: 
 
@@ -100,5 +100,5 @@ finishing...
 ```
 ### Test development
 ```
-$ npm run test
+npm run test
 ```
