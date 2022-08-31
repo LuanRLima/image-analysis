@@ -11,21 +11,18 @@ authorName: 'Luan Rodrigues Lima.'
 
 # Serverless Framework Node HTTP API com Rekognition e Translate na AWS
 
-Esta projeto demonstra como fazer uma API HTTP com Node.js em execução no AWS Lambda API Gateway, Rekognition e Translate usando o Serverless Framework para identificar as imagens e traduzir sua reposta usamos o jest para fazer os teste de integração.
+Este projeto demonstra como fazer uma API HTTP com Node.js em execução no AWS Lambda API Gateway, Rekognition e Translate usando o Serverless Framework para identificar as imagens e traduzir sua reposta usamos o jest para fazer os testes de integração.
 
 ## Uso
-E necessario a instalacao do aws cli :
-https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+E necessário a instalação do aws cli : https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
 
-O guia para configurar o aws cli
-https://docs.aws.amazon.com/pt_br/cli/latest/userguide/cli-configure-quickstart.html
+O guia para configurar o aws cli https://docs.aws.amazon.com/pt_br/cli/latest/userguide/cli-configure-quickstart.html
 
-
-Para instalar todas as dependencias dentro da /demo04-image-analysis/image-analysis execute o comnado a a baixo para baixar as dependencias do projeto
+Para instalar todas as dependências dentro da /demo04-image-analysis/image-analysis execute o comando  a baixo para baixar as dependências do projeto
 
 $ npm install
 
-(Opcional) Instalar o ntl ele lhe ajudar a rodar os scripts do package.json:
+(Opcional) Instalar o ntl, ele vai lhe ajudar a rodar os scripts do package.json:
 
 $ npm install -g ntl
 
@@ -69,24 +66,21 @@ O que deve resultar em uma resposta semelhante à seguinte
   95.83% de ser do tipo Suv
 }
 ```
-Voce pode invocar a funcao em prod usando o comando a abaixo  para executar local com mock o do test:
+Você pode invocar a função em prod usando o comando a abaixo para executar local com mock o do test:
 
 $ npm run invoke
 
-Voce pode invocar a funcao em prod usando o comando a abaixo e passando o path do arquivo json de sua preferencia:
+Você pode invocar a função em prod usando o comando a abaixo e passando o path do arquivo json de sua preferência:
 
 $ ls invoke -f img-analysis --path caminho/arquivo.json
 
-### Local development
-
-Voce pode invocar a funcao local usando o comando a abaixo  para executar local com mock o do test:
+Local development
+Você pode invocar a função local usando o comando a abaixo para executar local com mock o do test:
 
 $ npm run invoke:local
 
-Voce pode invocar a funcao local usando o comando a abaixo e passando o path do arquivo json de sua preferencia
+Você pode invocar a função local usando o comando a abaixo e passando o path do arquivo json de sua preferência
 
-
-```bash
 $ sls invoke local -f img-analysis --path caminho/arquivo.json
 ```
 
