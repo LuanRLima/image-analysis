@@ -66,7 +66,7 @@ O que deve resultar em uma resposta semelhante à seguinte
   95.83% de ser do tipo Suv
 }
 ```
-Você pode invocar a função em prod usando o comando a abaixo para executar local com mock o do test:
+Você pode invocar a função em prod usando o comando a baixo para executar local com mock o do test:
 
 $ npm run invoke
 
@@ -82,9 +82,8 @@ $ npm run invoke:local
 Você pode invocar a função local usando o comando a abaixo e passando o path do arquivo json de sua preferência
 
 $ sls invoke local -f img-analysis --path caminho/arquivo.json
-```
 
-O que deve resultar em uma resposta semelhante à seguinte:
+O que deve resultar em uma resposta semelhante à seguinte: 
 
 ```
 event {
